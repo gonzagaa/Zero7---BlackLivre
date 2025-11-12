@@ -1,0 +1,118 @@
+#topicos {
+    overflow: hidden;
+    position: relative;
+}
+
+#topicos .content {
+    position: relative;
+    z-index: 1;
+}
+
+#topicos img.bgsection {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#topicos header h2 {
+    color: #070C11;
+}
+
+#topicos header p {
+    color: #070C11;
+}
+
+#topicos header p span {
+    color: #070C11;
+}
+
+#topicos .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#topicos .cards .card {
+    border: 3px solid #ffffff09;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+#topicos .cards .card:nth-child(1)  {
+    background: #070E0F;
+}
+
+#topicos .cards .card:nth-child(2) {
+    background: #070C11;
+}
+
+#topicos .cards .card:nth-child(3)  {
+    background: #0D0F18;
+}
+
+#topicos .cards .card img {
+    width: 100%;
+
+    border-bottom: 2px solid #ffffff17;
+}
+
+#topicos .cards .card .text {
+    padding: 1.5rem;
+}
+
+#topicos .cards .card .text p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #fff;
+
+    margin-bottom: 2rem;
+}
+
+#topicos .cards .card:nth-child(1) a button {
+    background: linear-gradient(to right, #00FFDE, #00B49D);
+    color: #000;
+}
+
+#topicos .cards .card:nth-child(2) a button {
+    background: linear-gradient(to right, #00A1FF, #007EC7);
+}
+
+#topicos .cards .card:nth-child(3) a button {
+    background: linear-gradient(to right, #0021FF, #0015A0);
+}
+
+@media (min-width: 1080px) {
+    section#topicos .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#topicos .cards .card a button,
+    section#topicos .cards .card a {
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 1.5rem 4.5rem;
+    }
+
+    section#topicos .cards .card .text {
+        padding: 1rem;
+        padding-inline: 2rem;
+    }
+
+    section#topicos .cards .card .text p {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+
+    section#topicos .cards .card:nth-child(3) .text p {
+        margin-bottom: 3.3rem;
+        font-size: 1.2rem;
+    }
+}

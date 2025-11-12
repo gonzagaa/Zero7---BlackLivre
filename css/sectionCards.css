@@ -1,0 +1,244 @@
+#cards {
+    overflow: hidden;
+    position: relative;
+}
+
+#cards .content {
+    position: relative;
+    z-index: 1;
+}
+
+#cards img.bgsection {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#cards::before,
+#cards::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, transparent, #023c83, #0080c9, #023c83, transparent);
+    z-index: 2;
+}
+
+#cards::after {
+    top: initial;
+    bottom: 0;
+}
+
+#cards::before {
+    display: none;
+}
+
+#cards .content {
+    position: relative;
+    z-index: 1;
+}
+
+#cards .card img {
+    width: 100%;
+    filter: brightness(.8);
+
+    transition: all 500ms ease-in-out;
+}
+
+#cards .card:hover img {
+    transform: scale(1.1);
+}
+
+#cards .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#cards .cards .row-1,
+#cards .cards .row-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#cards .card {
+    overflow: hidden;
+    border-radius: 2rem;
+    position: relative;
+    border: 2px solid #ffffff12;
+
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+#cards .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #000000d7, transparent);
+    z-index: 1;
+}
+
+#cards .card .text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 1rem;
+    z-index: 2;
+    width: 96%;
+
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(14, 14, 14, 0.534);
+    border-radius: 2rem;
+
+    transition: all 500ms ease-in-out;
+
+    border: 1px solid #ffffff1a;
+}
+
+#cards .card:hover .text {
+    border: 1px solid #1da5f379;
+}
+
+#cards .card .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+#cards .card .head ion-icon {
+    color: #fff;
+    font-size: 2rem;
+    transform: rotate(-45deg);
+
+    transition: all 500ms ease-in-out;
+
+    background: #fff;
+    color: var(--primary-color);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+#cards .card:hover .head ion-icon {
+    transform: rotate(90deg);
+    background: linear-gradient(45deg, #1da4f3, #056ba6);
+    color: #fff;
+}
+
+#cards .card h3 {
+    color: #cddbe4;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    transition: all 500ms ease-in-out;
+}
+
+#cards .card .reveal {
+    padding: 0 2rem;
+    transition: all 500ms ease-in-out;
+}
+
+#cards .card:hover .reveal {
+    padding-bottom: 2rem;
+}
+
+#cards .card .reveal p {
+    font-size: 1.3rem;
+    color: #Fff;
+    line-height: 0;
+    text-align: left;
+
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+}
+
+#cards .card:hover .reveal p {
+    line-height: 1.6;
+    opacity: 1;
+}
+
+@media (min-width: 1080px) {
+    section#cards .cards .card img {
+        /* mask-image: linear-gradient(to bottom, #000, transparent); */
+    }
+
+    section#cards .bgsection {
+        mask-image: linear-gradient(to top, #000 80%, transparent);
+    }
+
+    section#cards header h2 {
+        width: 70%;
+    }
+
+    section#cards .cards .row-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    section#cards .cards .row-1 .card {
+        aspect-ratio: 16/10;
+    }
+
+    section#cards .cards .row-1 .card img {
+        aspect-ratio: 16/13;
+        object-fit: cover;
+    }
+
+    section#cards .cards .row-1 .card:nth-child(1) img {
+        aspect-ratio: 16/13;
+        width: 110%;
+        margin-left: -5%;
+    }
+
+    section#cards .cards .row-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    section#cards .cards .row-2 .card {
+        aspect-ratio: 16/13;
+    }
+
+    section#cards .cards .row-2 .card img {
+        aspect-ratio: 16/15;
+        object-fit: cover;
+    }
+
+    section#cards .card h3.title {
+        bottom: 3rem;
+        left: 4rem;
+    }
+
+    section#cards .card h3 {
+        font-size: 2rem;
+    }
+
+    section#cards .cards .row-2 .card h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    section#cards header h2 {
+        width: 60%;
+    }
+}

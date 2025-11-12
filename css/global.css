@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--tts);
+}
+
+@import url('https://fonts.cdnfonts.com/css/tt-fors-trial');
+@import url('https://fonts.cdnfonts.com/css/ncs-radhiumz');
+
+:root {
+    font-size: 62.5% ;
+
+    --color-text: #f2fffb;
+    --primary-color: #0080c9;
+    --secondy-color: #023c83;
+    --orange-black: #000205;
+    --orange-blac: #000b1c;
+    --gradient: linear-gradient(to right, #023c83, #0080c9);
+    --bg-black: #000205;
+    --bg-white: #f2fffb;
+    color: #7c8590;
+    --nav-height: 7.2rem;
+
+    --ncs: 'NCS Radhiumz', sans-serif;
+    --tts: 'TT Fors Trial', sans-serif;                                             
+}  
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+  }
+
+  #contagem {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @media (min-width: 1080px) {
+    #contagem {
+      left: 70%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  body {
+    background:var(--bg-black);
+  }
+
+
+  /* .cursor-dot {
+    width: 5px;
+    height: 5px;
+    background: #8100e4be;
+  }
+
+  .cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #8100e4be;
+  }
+
+  .cursor-dot,
+  .cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 150;
+    pointer-events: none;
+  } */
+
+  button {
+    cursor: url(""), auto;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  ::selection {
+  color: #000000;
+  background: #d8d8d8;
+}
+
+  .wrapper {
+    width: min(50rem, 100%);
+    margin-inline: auto;
+  
+    padding-inline: 2.4rem;
+  }
+
+  @media (min-width: 1080px) {
+    .wrapper {
+      width: min(110rem, 100%);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(120rem, 100%);
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .wrapper {
+      width: min(130rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+  }
+  
+  section {
+    padding-block: 8rem;
+  }
+
+  /*====  scrollbar ============================ */
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  width: .6rem;
+  background: var(--gradient);
+  border-radius: 1rem;
+}
+
+  /* buttonWhatsapp =================== */
+#buttonWhatsapp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+  
+    opacity: 0;
+    visibility: hidden;
+  
+    transform: translateY(100%);
+    transition: all 300ms ease-in-out;
+  }
+  
+  #buttonWhatsapp.show {
+    opacity: 1;
+    visibility: visible;
+  
+    transform: translateY(0);
+  }
+  
+  #buttonWhatsapp img {
+    width: 6rem;
+    transition: all 300ms ease-in-out;
+  }
+  
+  #buttonWhatsapp svg:hover {
+    transform: scale(1.1);
+  }

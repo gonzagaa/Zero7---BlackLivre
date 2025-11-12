@@ -1,0 +1,128 @@
+#depoimentos {
+    overflow: hidden;
+    position: relative;
+}
+
+#depoimentos img.bgsection {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#depoimentos::before,
+#depoimentos::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, transparent, #023c83, #0080c9, #023c83, transparent);
+    z-index: 2;
+}
+
+#depoimentos::after {
+    top: initial;
+    bottom: 0;
+    display: none;
+}
+
+#depoimentos::before {
+}
+
+#depoimentos header {
+    margin-top: 6rem;
+}
+
+#depoimentos header h2 {
+    font-size: 2rem;
+}
+
+#depoimentos header p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#depoimentos .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#depoimentos .cards .card {
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+#depoimentos .cards .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: all 300ms ease-in-out;
+}
+
+#depoimentos .cards .card:hover img {
+    transform: scale(1.04);
+    filter: brightness(1.2);
+}
+
+#depoimentos .wrapper.carrossel {
+    position: relative;
+}
+
+@media (min-width: 1080px) {
+    section#depoimentos header {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    section#depoimentos header h2 {
+        font-size: 3rem;
+    }
+
+    section#depoimentos .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+        align-items: center;
+    }
+
+    section#depoimentos .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    section#depoimentos header {
+        text-align: left;
+        align-items: start;
+    }
+
+    section#depoimentos header h2 {
+        font-size: 2.7rem;
+    }
+
+    section#depoimentos header p {
+        font-size: 1.4rem;
+    }
+
+    section#depoimentos .wrapper.carrossel {
+        position: relative;
+        width: 100%;
+        padding-inline: 0;
+    }
+
+    section#depoimentos img.logo {
+        display: inherit;
+        position: absolute;
+    }
+}

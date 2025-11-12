@@ -1,0 +1,159 @@
+#faq {
+    overflow: hidden;
+    position: relative;
+}
+
+#faq img.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#faq .content {
+    position: relative;
+    z-index: 1;
+}
+
+#faq .faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#faq details {
+    width: 100%;
+    user-select: none;
+}
+
+#faq summary {
+    color: #fffffffe;
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    background: linear-gradient(130deg, #010b15, #01050b);
+
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 0 1rem 1rem 0;
+
+    border: 2px solid #5757571f;
+
+    transition: all 200ms ease-in-out;
+}
+
+#faq summary::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, #023c83, #0080c9);
+    transition: all 200ms ease-in-out;
+}
+
+#faq summary:hover {
+    cursor: pointer;
+    border: 2px solid #5757571f;
+}
+
+#faq summary:hover::before {
+    width: 10px;
+    left: -1rem;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+#faq details[open] summary {
+    border-radius: 1rem 1rem 0 0;
+
+    border: 2px solid #ababab93;
+    border-bottom: 0;
+}
+
+#faq details[open] summary::before {
+    display: none;
+}
+
+#faq details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+
+#faq summary ion-icon {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+
+    font-size: 3rem;
+    transition: all .5s ease-in-out;
+    color: var(--primary-color);
+    transform: rotate(-45deg);
+    position: relative;
+    line-height: 0;
+}
+
+
+#faq details[open] summary ion-icon {
+    transform: rotate(0);
+}
+
+details>summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+#faq details p {
+    background: linear-gradient(130deg, #010b15, #01050b);
+
+    padding: 3rem;
+    padding-top: 2rem;
+    padding-right: 10%;
+    text-align: left;
+    
+    border: 2px solid #ababab93;
+
+    border-top: 0;
+
+    border-radius: 0 0 1rem 1rem;
+
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+@media (min-width: 1080px) {
+    section#faq .faq {
+    }
+
+    section#faq summary {
+        font-size: 1.3rem;
+        padding: 1.5rem;
+    }
+
+    section#faq h3 {
+        margin-top: 8rem;
+    }
+
+}

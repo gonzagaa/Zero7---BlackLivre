@@ -1,0 +1,47 @@
+header {
+    margin-bottom: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h2 {
+    color: #ffffff;
+    font-size: 2.2rem;
+  
+    font-family: var(--ncs);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+header h2 span {
+    font-family: var(--ncs);
+    background: linear-gradient(45deg, #1da4f3, #056ba6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #d1e0ff;
+
+    margin-bottom: 2rem;
+}
+
+header p span {
+    color: #d1e0ff;
+    font-weight: 600;
+}
+
+@media (min-width: 1080px) {
+    header h2 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.6rem;
+    }
+}

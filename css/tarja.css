@@ -1,0 +1,71 @@
+.tarja img.mobile {
+    width: 100%;
+}
+
+.tarja img.desktop {
+    display: none;
+    width: 100%;
+}
+
+.tarjaTimer {
+    background: #fff;
+    width: 100%;
+}
+
+.tarjaTimer p {
+    font-size: 1.3rem;
+    padding-block: 1rem;
+}
+
+.tarjaTimer p span {
+    font-weight: 600;
+}
+
+.tarjaTimer .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 25px;
+}
+
+.tarjaTimer .countdown div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.tarjaTimer .label {
+      font-size: 12px;
+      margin-top: -7px;
+}
+
+.tarjaImage {
+    position: fixed;
+    left: 0;
+    z-index: 99;
+}
+
+@media (min-width: 1080px) {
+    div.tarja img.mobile {
+        display: none;
+    }
+    
+    div.tarja img.desktop {
+        display: inherit;
+    }
+
+    div.tarjaTimer {
+        padding-block: 1rem;
+    }
+
+    div.tarjaTimer .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.tarjaTimer .countdown {
+        margin-inline: 3rem;
+    }
+}

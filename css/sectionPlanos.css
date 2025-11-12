@@ -1,0 +1,613 @@
+.planos {
+    overflow: hidden;
+    position: relative;
+}
+
+.planos header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.planos img.cupom {
+    width: 35rem;
+    margin-bottom: 6rem;
+}
+
+.planos.white header h2 {
+    color: #070C11;
+}
+
+.planos.white header p {
+    color: #070C11;
+}
+
+.planos.white header p span {
+    color: #070C11;
+}
+
+.planos img.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.planos img.bg.arraia {
+}
+
+.planos img.bg.arraia.desktop {
+    display: none;
+}
+
+.planos .wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.planos::before,
+.planos::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, transparent, #023c83, #0080c9, #023c83, transparent);
+    z-index: 2;
+}
+
+.planos::after {
+    top: initial;
+    bottom: 0;
+}
+
+.planos .cards {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.planos .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    border-radius: 2rem;
+
+    background: linear-gradient(to bottom, #02060f, #0a121a);
+
+    padding: 2rem;
+    padding-top: 3rem;
+    border: 2px solid #ffffff13;
+}
+
+.planos p.obs {
+    font-size: 1.4rem;
+    color: #ffffff80;
+
+    position: relative;
+    z-index: 1;
+
+    margin-top: 2rem;
+}
+
+.planos.white .card {
+    background: linear-gradient(to bottom, #eef5fe, #e3eefd);
+    border: 2px solid #cfe2fc;
+}
+
+.planos .card .title {
+    position: absolute;
+    background: linear-gradient(to bottom, #01040A, #070C11);
+    border: 1px solid #ffffff21;
+    padding: 1rem 3rem;
+
+    top: -4%;
+    width: 80%;
+    border-radius: 2rem;
+}
+
+.planos.white .card .title {
+    background: linear-gradient(to bottom, #030a1a, #132332);
+}
+
+.planos .card .title::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: -1px;
+    left: 0;
+
+    background: linear-gradient(to right, transparent, #00a2ff, transparent);
+}
+
+.planos .card .title h3 {
+    color: #fff;
+    font-family: var(--ncs);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.planos.bit .card .title h3 {
+    font-size: 2.5rem;
+}
+
+.planos.bit .card a button {
+    
+}
+
+.planos .card .topics {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+
+    margin-block: 3rem;
+
+    width: 100%;
+}
+
+.planos .card .topics p {
+    color: #dae1e6;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.planos.white .card .topics p {
+    color: #070C11;
+}
+
+.planos .card .topics p span {
+    color: #e7e7e7;
+    font-weight: 500;
+}
+
+.planos.white .card .topics p span {
+    color: #070C11;
+}
+
+.planos .card .topics p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: -1rem;
+    left: 0;
+
+    background: linear-gradient(to right, #004f7c 60%, transparent);
+}
+
+.planos .card .topics p:nth-child(1)::before {
+    display: none;
+}
+
+.planos .card .topics ion-icon {
+    color: var(--primary-color);
+}
+
+.planos .card .oldPrice {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    color: #ffffffc2;
+    width: 50%;
+    border-radius: 1rem;
+    font-weight: 300;
+}
+
+.planos .card .oldPrice h4 {
+    font-family: var(--tts);
+    font-weight: 500;
+    
+    position: relative;
+}
+
+.planos .card .oldPrice h4::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 48.5%;
+    background: #f60404e8;
+    z-index: 2;
+}
+
+.planos.bit .card .oldPrice h4 {
+    color: #02060f;
+}
+
+.planos.bit .card .oldPrice h4::before {
+    background: #ff0000e5;
+}
+
+
+.planos .card .price h4 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: var(--ncs);
+    line-height: 1;
+}
+
+.planos.white .card .price h4 {
+    color: #081c31;
+}
+
+.planos .card .price h4 span {
+    font-family: var(--ncs);
+    background: linear-gradient(45deg, #1da4f3, #056ba6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+
+.planos .card .price h5 {
+    font-family: var(--ncs);
+    color: #fff;
+    font-size: 2rem;
+}
+
+.planos.white .card .price h5 {
+    color: #081c31;
+}
+
+.planos .card .price h5 span {
+    background: linear-gradient(45deg, #1da4f3, #056ba6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.7rem;
+}
+
+.planos .card a {
+    width: 100%;
+}
+
+.planos .card a button {
+    margin-top: 3rem;
+    width: 100%;
+    border-radius: 1.3rem;
+    filter: none;
+}
+
+/* .planos .swiper-button-next,
+.planos .swiper-button-prev {
+    display: none;
+} */
+
+.planos .swiper-pagination-bullet {
+    background-color: #ffffff2e; 
+}
+
+.planos.white .swiper-pagination-bullet {
+    background-color: #2424242e; 
+}
+
+.planos .swiper-pagination-bullet-active,
+.planos.white .swiper-pagination-bullet-active {
+    background-color: #0080c9; 
+}
+
+body section.planos .wrapper .swiper.mySwiper4 {
+    overflow: inherit;
+}
+
+body section.planos .wrapper .swiper.mySwiper11 {
+    overflow: inherit;
+}
+
+.planos .cupom {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    gap: .5rem;
+    align-items: center;
+}
+
+
+.planos .cupom p {
+    color: #fff;
+    width: 30%;
+}
+
+.planos .cupom .copy {
+    width: 100%;
+    background: linear-gradient(to bottom, #01040A, #070C11);
+    border: 1px solid #ffffff21;
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.planos .cupom .copy:hover h3 {
+    color: #d1dbea;
+}
+
+.planos .cupom .copy:hover ion-icon {
+    color: #ccd5e3;
+}
+
+.planos .cupom .copy h3 {
+    font-family: var(--ncs);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #8298b7;
+
+    transition: all 300ms ease-in-out;
+}
+
+.planos .cupom .copy ion-icon {
+    font-size: 1.6rem;
+    color: #8298b7;
+
+    transition: all 300ms ease-in-out;
+}
+
+.planos header a {
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planos header button.corrida {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    font-family: var(--ncs);
+    background: linear-gradient(45deg, #1da4f3, #056ba6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border: none;
+
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.planos header button.corrida ion-icon {
+    color: var(--primary-color);
+
+    transition: all 300ms ease-in-out;
+}
+
+.planos header button.corrida:hover {
+    filter: brightness(1.4);
+}
+
+.planos header button.corrida:hover ion-icon {
+    margin-left: 1rem;
+}
+
+.planos .swiper-button-next,
+.planos .swiper-button-prev {
+    display: inherit;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10%;
+    background: var(--gradient);
+    padding: 4.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: scale(.30);
+    top: 45%;
+
+    transition: all 300ms ease-in-out;
+
+    border: none;
+    color: #ffffff;
+}
+
+.planos .swiper-button-next {
+    right: -16%;
+}
+
+.planos .swiper-button-prev {
+    left: -16%;
+}
+
+
+@media (min-width: 1080px) {
+    
+
+    section.planos .wrapper.plano {
+        width: 100%;
+    }
+
+    section.planos img.bg.arraia.desktop {
+        display: inherit;
+        width: 100%;
+        inset: 0;
+        object-fit: cover;
+    }
+
+    section.planos img.bg.arraia.mobile {
+        opacity: .1;
+        display: none;
+    }
+
+    section.planos img.cupom {
+        width: 45rem;
+        margin-bottom: 5rem;
+    }
+
+    section.planos .card a,
+    section.planos .card a button {
+        width: 100%;
+    }
+
+    section.planos .card .title {
+        width: 60%;
+        top: -4.5%;
+    }
+
+    section.planos .card .topics {
+        width: 80%;
+        margin-block: 5rem;
+        gap: 2rem;
+    }
+
+    section.planos .card .topics p {
+        font-size: 1.6rem;
+    }
+
+    section.planos .card .topics p:nth-child(6):before {
+        background: #fff;
+        mask-image: linear-gradient(to right, #000, transparent 70%);
+    }
+
+    section.planos .card .price h4 {
+        font-size: 5rem;
+    }
+    
+    section.planos .card .price h4 span {
+        font-size: 3rem;
+    }
+    
+    section.planos .card .price h5 {
+        font-size: 3rem;
+    }
+    
+    section.planos .card .price h5 span {
+        font-size: 2rem;
+    }
+
+    section.planos .swiper-button-next,
+    section.planos .swiper-button-prev {
+        display: inherit;
+        width: 5rem;
+        height: 5rem;
+        border: 3px solid var(--primary-color);
+        border-radius: 50%;
+        padding: 4.5rem;
+        background: transparent;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transform: scale(.5);
+        top: 45%;
+
+        transition: all 300ms ease-in-out;
+    }
+
+    section.planos .swiper-button-next:hover,
+    section.planos .swiper-button-prev:hover {
+        background: #007fc91c;
+        transform: scale(.54);
+    }
+
+    section.planos .swiper-button-next {
+        right: 30%;
+        color: var(--primary-color);
+    }
+
+    section.planos .swiper-button-prev {
+        left: 30%;
+        color: var(--primary-color);
+    }
+
+    body section.planos .wrapper .swiper.mySwiper4 {
+        overflow: hidden;
+    }
+
+    body section.planos .wrapper .swiper.mySwiper11 {
+        overflow: hidden;
+    }
+    
+    section.planos .swiper:before,
+    section.planos .swiper:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 20rem;
+        height: 100%;
+        z-index: 2;
+        display: none;
+    }
+    
+    section.planos .swiper:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), #0b1118);
+    }
+    
+    section.planos .swiper:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #0a1017);
+    }
+
+    section.planos.white .swiper:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), #F2FAFF);
+    }
+
+    section.planos.white .swiper:after {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #F2FAFF);
+    }
+
+    section.planos .card a button {
+        filter: drop-shadow(0 0 20px #1da5f349);
+    }
+
+    section.planos .card a button:hover {
+        filter: drop-shadow(0 0 40px #1da5f376);
+    }
+
+    section.planos p.obs {
+        font-size: 1.6rem;
+        padding-inline: 25%;
+    }
+
+    section.planos.bit {
+        padding-inline: 15%;
+    }
+
+    section.planos.bit a button {
+    }
+
+    section.planos.bit .swiper-button-next,
+    section.planos.bit .swiper-button-prev {
+        display: none;
+    }
+
+    section.planos .card .oldPrice h4::before {
+        width: 30%;
+    }
+
+    section.planos.bit .card .oldPrice h4::before {
+    }
+}
+
+@media (min-width: 1700px) {
+    section.planos.bit {
+        padding-inline: 20%;
+    }
+}

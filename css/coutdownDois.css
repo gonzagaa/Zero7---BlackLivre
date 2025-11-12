@@ -1,0 +1,39 @@
+.countdown.dois {
+    position: fixed;
+    z-index: 999;
+    left: 51%;
+    top: 3px;
+
+    display: flex;
+      justify-content: center;
+      gap: 5px;
+}
+
+.countdown.dois span {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.countdown.dois span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.countdown.dois span.label {
+    font-size: 1.1rem;
+}
+
+@media (min-width: 1080px) {
+    .countdown.dois {
+        left: 54.5%;
+        top: 2.7%;
+    }
+
+    .countdown.dois span {
+        font-size: 1.8rem;
+    }
+
+    .countdown.dois span.label {
+        font-size: 1.4rem;
+    }
+}

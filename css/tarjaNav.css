@@ -1,0 +1,184 @@
+.tarjaTimerNav {
+    background: radial-gradient(at center bottom, #FA6725, #E03C11);
+    width: 100%;
+
+    display: none;
+    opacity: 0;
+    transform: translateY(-300%);
+
+    transition: all 300ms ease-in-out;
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding-block: 2rem;
+}
+
+.tarjaTimerNav h3 {
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem;
+    width: 100%;
+    background: #114ee0;
+
+    margin-bottom: 1.3rem;
+
+    margin-top: -2rem;
+}
+
+.tarjaTimerNav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.tarjaTimerNav .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tarjaTimerNav.active {
+    display: inherit;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tarjaTimerNav p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.tarjaTimerNav p span {
+    font-weight: 600;
+}
+
+.tarjaTimerNav .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 13px;
+      font-size: 1.7rem;
+      font-weight: 700;
+}
+
+.tarjaTimerNav .countdown div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.tarjaTimerNav .label {
+      font-size: .8rem;
+      margin-top: -5px;
+      font-weight: 400;
+}
+
+#home.activeTarjaHome {
+     margin-top: 10rem;
+}
+
+.countdown.dois {
+    position: fixed;
+    z-index: 999;
+    left: 51%;
+    top: 3px;
+
+    display: flex;
+      justify-content: center;
+      gap: 5px;
+}
+
+.countdown.dois span {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.countdown.dois span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.countdown.dois span.label {
+    font-size: 1.1rem;
+}
+
+@media (min-width: 1080px) {
+      div.tarjaTimerNav {
+        padding-block: 1rem;
+        width: calc(100% - 200px);
+        left: 100px;
+        top: 0;
+        position: fixed;
+        z-index: 3;
+
+        border-radius: 0;
+
+        height: 6rem;
+        max-height: 6rem;
+
+        padding-block: 1.5rem;
+    }
+
+    div.tarjaTimerNav h3 {
+        position: absolute;
+        width: max-content;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        top: 50%;
+        z-index: 101;
+        left: 1%;
+        transform: translate(0, -50%);
+        border-radius: .5rem;
+
+        margin-top: 0;
+    }
+
+    div.tarjaTimerNav p {
+        font-size: 1.3rem;
+    }
+
+    div.tarjaTimerNav .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.tarjaTimerNav .countdown {
+    }
+
+    div.tarjaTimerNav p.dois {
+    }
+
+    nav#navigation.activeTarja {
+        top: 6rem;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    header#home.activeTarjaHome {
+        margin-top: 7rem;
+    }
+
+    .countdown.dois {
+        left: 54.5%;
+        top: 2.7%;
+    }
+
+    .countdown.dois span {
+        font-size: 1.8rem;
+    }
+
+    .countdown.dois span.label {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    div.tarjaTimerNav {
+        width: calc(100% - 340px);
+        left: 170px;
+    }
+
+    div.tarjaTimerNav h3 {
+        left: 5%;
+    }
+}

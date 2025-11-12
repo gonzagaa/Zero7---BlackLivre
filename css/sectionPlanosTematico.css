@@ -1,0 +1,158 @@
+.planos.tema .card {
+    /* From https://css.glass */
+background: linear-gradient(to top, #000, #0e0e0e);
+}
+
+.planos.tema .card .title {
+    background: linear-gradient(to bottom, #000000, #000000);
+}
+
+/* .planos.tema .card a button {
+    background: radial-gradient(at center bottom, #ffffff, #a9a9a9);
+    filter: drop-shadow(0 0 20px #f6f6f649);
+    color: #000;
+}
+
+.planos.tema .card a button:hover {
+    filter: drop-shadow(0 0 40px #ffffff34);
+} */
+
+.planos.tema .card .title::before {
+    background: linear-gradient(to right, transparent, #ffffff, transparent);
+}
+  
+.planos.tema .card .price h4 span,
+.planos.tema .card .price h5 span {
+    background: linear-gradient(45deg, #cdcdcd, #636363);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.planos.tema .card .topics p::before {
+    background: linear-gradient(to right, #ffffff, transparent 70%);
+}
+
+.planos.tema .card .topics ion-icon {
+    color: #fff;
+}
+
+.planos.tema .swiper-pagination-bullet-active {
+    background-color: #ffffff; 
+}
+
+.planos .botoes {
+    display: flex;
+    gap: 1rem .5rem; 
+
+    margin-top: 2rem;
+}
+
+.planos .botoes button {
+    padding: 1rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 1.1rem;
+
+    border: 1px solid #464646;
+    background: linear-gradient(45deg, #000, #1a1a1a);
+
+    transition: all 300ms ease-in-out;
+}
+
+.planos .botoes button:hover {
+    cursor: pointer;
+    background:#1c1c1c;
+}
+
+.planos .botoes button.selecionado {
+    background: var(--gradient);
+}
+
+.planos.bit .botoes button {
+    background: linear-gradient(45deg, #00000030, rgba(215, 215, 215, 0.108));
+    color: #000;
+    border: 1px solid #46464647;
+}
+
+.planos.bit .botoes button:hover {
+    background: #00000020;
+}
+
+.planos.bit .botoes button.selecionado {
+    background: var(--gradient);
+    color: #fff;
+}
+
+.planos .textBotoes p {
+    font-size: 1.4rem;
+    color: #ffffff80;
+
+    position: relative;
+    z-index: 1;
+
+    margin-top: 2rem;
+}
+
+.planos .textBotoes p.reinicio {
+    font-size: 1.2rem;
+}
+
+/* deixa tudo escondido por padrão... */
+.textBotoes p { display: none; }
+/* ...e só mostra o ativo */
+.textBotoes p.is-active { display: block; }
+
+/* animação antiga, só pro máximo de dias */
+.flash-change {
+  animation: flashChange 0.6s ease-out;
+}
+
+@keyframes flashChange {
+  0% {
+    color: #0080c9;
+    text-shadow: 0 0 8px #007fc959;
+  }
+  50% {
+    color: #0080c9;
+    text-shadow: 0 0 4px #007fc959;
+  }
+  100% {
+    color: inherit;
+    text-shadow: none;
+  }
+}
+
+/* estado base: garante transição suave sempre depois da 1ª troca */
+.flash-base {
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+/* estado ativo rápido: destaque */
+.flash-active {
+  color: #0080c9; /* amarelo destaque */
+  text-shadow: 0 0 8px #007fc98e,
+               0 0 16px #007fc99c;
+}
+
+.planos.bit .flash-active {
+  color: #0080c9; /* amarelo destaque */
+  text-shadow: 0 0 8px #007fc925,
+               0 0 16px #007fc927;
+}
+
+@media (min-width: 1080px) {
+    section.planos .botoes button {
+        padding: 1rem 3rem;
+        font-size: 1.6rem;
+    }
+    
+    section.planos .textBotoes p {
+        font-size: 1.6rem;
+        padding-inline: 20%;
+    }
+
+    section.planos .textBotoes p.reinicio {
+        font-size: 1.6rem;
+        padding-inline: 10%;
+    }
+}
