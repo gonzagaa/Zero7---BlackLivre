@@ -60,57 +60,57 @@
 
   "sem_ativacao": {
     "trainee": {
-      "parcel": "12x R$25,13",
-      "avista": "ou R$251,35 à vista",
+      "parcel": "12x R$18,28",
+      "avista": "ou R$182,8 à vista",
       "checkout": "https://app.zero7.com.br/checkout/edc2b2",
       "maxDias": 60
     },
 
     "junior": {
-      "parcel": "12x R$37,78",
-      "avista": "ou R$377,85 à vista",
+      "parcel": "12x R$27,48",
+      "avista": "ou R$274,8 à vista",
       "checkout": "https://app.zero7.com.br/checkout/8296d5",
       "maxDias": 60
     },
 
     "pleno": {
-      "parcel": "12x R$75,73",
-      "avista": "ou R$757,35 à vista",
+      "parcel": "12x R$55,08",
+      "avista": "ou R$550,8 à vista",
       "checkout": "https://app.zero7.com.br/checkout/eb9d60",
       "maxDias": 60
     },
 
     "senior": {
-      "parcel": "12x R$126,33",
-      "avista": "ou R$1.263,35 à vista",
+      "parcel": "12x R$91,88",
+      "avista": "ou R$918,8 à vista",
       "checkout": "https://app.zero7.com.br/checkout/a3703e",
       "maxDias": 60
     },
 
     "expert": {
-      "parcel": "12x R$202,23",
-      "avista": "ou R$2.022,35 à vista",
+      "parcel": "12x R$147,08",
+      "avista": "ou R$1.470,8 à vista",
       "checkout": "https://app.zero7.com.br/checkout/6bfaa2",
       "maxDias": 60
     },
 
     "master": {
-      "parcel": "12x R$246,78",
-      "avista": "ou R$2.467,85 à vista",
+      "parcel": "12x R$179,48",
+      "avista": "ou R$1.794,8 à vista",
       "checkout": "https://app.zero7.com.br/checkout/a2e62e",
       "maxDias": 60
     },
 
     "bit_trainee": {
-      "parcel": "12x R$25,13",
-      "avista": "ou R$251,35 à vista",
+      "parcel": "12x R$18,28",
+      "avista": "ou R$182,8 à vista",
       "checkout": "https://app.zero7.com.br/checkout/b013c9",
       "maxDias": 60
     },
     
     "bit_junior": {
-      "parcel": "12x R$37,78",
-      "avista": "ou R$377,85 à vista",
+      "parcel": "12x R$27,48",
+      "avista": "ou R$274,8 à vista",
       "checkout": "https://app.zero7.com.br/checkout/f33c79",
       "maxDias": 60
     }
