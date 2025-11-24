@@ -166,6 +166,21 @@
     position: relative;
 }
 
+.planos .card .topics p:nth-child(9) {
+    background: #fff;
+    color: #000;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.planos .card .topics p:nth-child(9) span {
+    color: #000;
+}
+
+.planos .card .topics p:nth-child(9) ion-icon {
+    color: #000;
+}
+
 .planos.white .card .topics p {
     color: #070C11;
 }
@@ -481,6 +496,10 @@ body section.planos .wrapper .swiper.mySwiper11 {
     section.planos .card .topics p:nth-child(6):before {
         background: #fff;
         mask-image: linear-gradient(to right, #000, transparent 70%);
+    }
+
+    section.planos .card .topics ion-icon {
+        margin-bottom: -.3rem;
     }
 
     section.planos .card .price h4 {
