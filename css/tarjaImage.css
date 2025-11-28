@@ -47,7 +47,7 @@
     font-size: 1rem;
     padding: .5rem;
     width: 100%;
-    background: linear-gradient(45deg, #667EEA, #764BA2);
+    background: red;
 
 
 }
@@ -86,7 +86,7 @@
         font-size: 1rem;
         top: 14%;
         z-index: 101;
-        left: 25%;
+        left: 35%;
         transform: translate(0, -50%);
         border-radius: .5rem;
         font-weight: 500;
