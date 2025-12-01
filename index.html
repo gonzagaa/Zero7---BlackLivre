@@ -1567,6 +1567,22 @@
     </div>
   </section>
 
+  <script>
+(function () {
+  var host = window.location.hostname.replace(/^www\./, '');
+  var path = window.location.pathname;
+
+  // Se cair em /blacklivre → redireciona para /home
+  if (
+    host === 'zero7.com.br' &&
+    (path === '/blacklivre' || path === '/blacklivre/')
+  ) {
+    window.location.replace('https://zero7.com.br/home');
+  }
+})();
+</script>
+
+
   <a target="_blank" href="https://wa.link/9d2x9e" class="btn-whatsapp-pulse">
     <ion-icon name="logo-whatsapp"></ion-icon>
   </a>
